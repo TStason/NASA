@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_margin="10dp"
+              android:background="#8B8B8B"
+>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView" android:scaleType="fitXY"
+                tools:layout_editor_absoluteY="300dp"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/videoCover" android:scaleType="fitXY" android:alpha="0.7"
+                app:srcCompat="@drawable/img_video_cover" tools:layout_editor_absoluteY="300dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8FFFFFFF"
+            android:layout_weight="1">
+        <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/title" android:textAlignment="viewStart"
+                android:textStyle="italic" android:textSize="18sp"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/description" android:textAlignment="center"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/keywords" android:textAlignment="viewEnd"
+                android:textStyle="bold" android:textSize="12sp"/>
+    </LinearLayout>
+</LinearLayout>
